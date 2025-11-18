@@ -1,55 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educação Física</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Banco de dados -->
-    <script src="zzz-js/data.js"></script>
-
-    <!-- Lógica -->
-    <script src="script.js" defer></script>
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Biblioteca Interna</title>
+<link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 <header>
-    <h1>Portal de Educação Física</h1>
-    <input id="searchBar" type="text" placeholder="Pesquisar conteúdo..." oninput="buscar()">
+<h1>Biblioteca Interna</h1>
 </header>
 
+
 <main>
-    <section id="modulesSection">
-        <h2>Módulos do Curso</h2>
-        <div id="modulesContainer"></div>
-    </section>
+<section class="search-box">
+<input type="text" id="searchInput" placeholder="Pesquisar livro..." />
+</section>
 
-    <section id="librarySection">
-        <h2>Biblioteca Interna</h2>
-        <div id="libraryContainer"></div>
-    </section>
 
-    <section id="exercisesSection">
-        <h2>Exercícios Interativos</h2>
-        <div id="exercisesContainer"></div>
-    </section>
-
-    <section id="simuladosSection">
-        <h2>Simulados</h2>
-        <div id="simuladosContainer"></div>
-    </section>
-
-    <section id="searchResults">
-        <h2>Resultados da Busca</h2>
-        <div id="resultsContainer"></div>
-    </section>
+<section id="booksContainer" class="books"></section>
 </main>
 
-<footer>
-    <p>Portal Acadêmico – Educação Física</p>
-</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
